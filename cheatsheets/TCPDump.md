@@ -1,6 +1,9 @@
 # TCPDump Cheat Sheet
 
 ### Capture Commands
+
+Use the following commands to capture data packets.
+
 | Command | Example Usage | Explanation |
 | ------ | ------ | ------ |
 | -i any | tcpdump -i any | Capture from all int. |
@@ -25,6 +28,8 @@
 | -S | tcpdump -S http | Display entire packet |
 
 ### Filter Commands
+
+Special filter expressions to the tcpdump keyword to pick out specific packets.
 
 | Filter Expression | Explanation |
 | ------ | ------ |
@@ -59,6 +64,8 @@
 
 ### Logical Operators
 
+Logical operators indicate how to work with certain traffic.
+
 | Operator | Syntax | Example | Description |
 | ------ | ------ | ------ | ------ |
 | AND | and, && | tcpdump -n src 192.168.1.1 and dst port 21 | Combine filtering options |
@@ -69,6 +76,8 @@
 | EQUAL | =, == | tcpdump host 127.0.0.1 = 0 | Show packets with zero length |
 
 ### Display Commands
+
+These tcpdump switches tell the terminal how to display the outpus.
 
 | Command | Example | Explanation |
 | ------ | ------ | ------ |
@@ -88,6 +97,8 @@
 
 ### Output Commands
 
+Customize your tcpdump output with the following commands.
+
 | Command | Example | Explanation |
 | ------ | ------ | ------ |
 | -w captures.pcap | tcpdump -i eth0 -w captures.pcap | Output capture to a file `captures.pcap` |
@@ -95,4 +106,3 @@
 | -L | tcpdump -i eth0 -L | Display data link types for the interface |
 | -q | tcpdump -i eth0 -q | Quick/quiet output. Print less protocol information, so output lines are shorter |
 | -U | tcpdump -i eth0 -U -w out.pcap | `Without -w option` - print a description of each packet's contents. `With -w option` - write each packet to the output file `out.pcap` in real time rather than only when the output buffer fills |
-
