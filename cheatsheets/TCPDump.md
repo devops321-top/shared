@@ -62,3 +62,21 @@
 | LESS | < | tcpdump <32 | Shows packets size less than 32 |
 | GREATER | > | tcpdump >=32 | Shows packets size greater than 32 |
 
+### Display Commands
+
+| Command | Example | Explanation |
+| ------ | ------ | ------ |
+| -A | tcpdump -i eth0 -A | Print each packet (minus its link level header) in ASCII. Handy for capturing web pages. |
+| -D | tcpdump -D | Print the list of the network interfaces available on the system and on which tcpdump can capture packets. |
+| -e | tcpdump -i eth0 -e | Print the link-level header on each output line, such as MAC layer addresses for protocols such as Ethernet and IEEE 802.11 |
+| -F params.conf | tcpdump -i eth0 -F /path/to/params.conf | Use the file `params.conf` as input for the `filter expression`. (Ignore other expressions on the command line.) |
+| -n | tcpdump -i eth0 -n | Don't convert addresses (i.e., host addresses, port numbers, etc.) to names. |
+| -u | tcpdump -i eth0 -u | Print undecoded network file system (NFS) handles. |
+| -v | tcpdump -i eth0 -v | Produce verbose output. |
+| -vv | tcpdump -i eth0 -vv | Additional verbose output than `-v` |
+| -vvv | tcpdump -i eth0 -vvv | Additional verbose output than `-vv` |
+| -x | tcpdump -i eth0 -x | Print the heades and data of each packet (minus its link level header) in hex. |
+| -xx | tcpdump -i eth0 -xx | Print the headers and data of each packet, including its link level header, in hex. |
+| -X | tcpdump -i eth0 -X | Print the headers and data of each packet (minus its link level header) in hex and ASCII. |
+| -XX | tcpdump -i eth0 -XX | Print the headers and data of each packet, including its link level header, in hex and ASCII. |
+
