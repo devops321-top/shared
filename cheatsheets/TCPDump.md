@@ -61,6 +61,7 @@
 | EXCEPT | not, ! | tcpdump dst 10.1.1.1 and not icmp | Negation of the comdition |
 | LESS | < | tcpdump <32 | Shows packets size less than 32 |
 | GREATER | > | tcpdump >=32 | Shows packets size greater than 32 |
+| EQUAL | =, == | tcpdump host 127.0.0.1 = 0 | Show packets with zero length |
 
 ### Display Commands
 
