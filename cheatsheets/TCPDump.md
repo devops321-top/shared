@@ -80,3 +80,13 @@
 | -X | tcpdump -i eth0 -X | Print the headers and data of each packet (minus its link level header) in hex and ASCII. |
 | -XX | tcpdump -i eth0 -XX | Print the headers and data of each packet, including its link level header, in hex and ASCII. |
 
+### Output Commands
+
+| Command | Example | Explanation |
+| ------ | ------ | ------ |
+| -w captures.pcap | tcpdump -i eth0 -w captures.pcap | Output capture to a file `captures.pcap` |
+| -d | tcpdump -i eth0 -d | Display human-readable form in standard output |
+| -L | tcpdump -i eth0 -L | Display data link types for the interface |
+| -q | tcpdump -i eth0 -q | Quick/quiet output. Print less protocol information, so output lines are shorter |
+| -U | tcpdump -i eth0 -U -w out.pcap | `Without -w option` - print a description of each packet's contents. `With -w option` - write each packet to the output file `out.pcap` in real time rather than only when the output buffer fills |
+
