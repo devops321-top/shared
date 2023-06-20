@@ -15,9 +15,14 @@
 | arp | tcpdump -i eth0 arp | Show ARP packets only |
 | rarp | tcpdump -i eth0 rarp | Show RARP packets only |
 | slip | tcpdump -i eth0 slip | Show SLIP packets only |
+| <service> | tcpdump http | Filter traffic based on a service |
+| <port> | tcpdump port 80 | Filter traffic based on a port number for a service |
 | -I | tcpdump -i eth0 -I | Set interface as monitor mode |
 | -K | tcpdump -i eth0 -K | Don't verify checksum |
-| -p | tcpdump -i eth0 -p | Don't capture in promiscuous mode|
+| -p | tcpdump -i eth0 -p | Don't capture in promiscuous mode |
+| -n | tcpdump -n -I eth0 | Do not resolve hostname |
+| -nn | tcpdump -n -i eth0 | Stop domain name translation and lookups (host names or port names) |
+| -S | tcpdump -S http | Display entire packet |
 
 ### Filter Commands
 
