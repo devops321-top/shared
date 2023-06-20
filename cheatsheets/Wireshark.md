@@ -14,7 +14,7 @@
 | Operator | Description | Example |
 | ------| ------ | ------ |
 | and or && | Logical AND | All the conditions should match |
-| 'or' or \|| | Logical OR | Either all or one of the conditions should match |
+| 'or' or \|\| | Logical OR | Either all or one of the conditions should match |
 | xor or ^^ | Logical XOR | Exclusive alterations - only one of the two conditions should match not both |
 | not or ! | Not (Negation) | Not equal to |
 | [ n ]  [ ... ] | Substring operator | Filter a specific word or text |
