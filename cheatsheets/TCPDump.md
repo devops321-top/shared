@@ -51,3 +51,14 @@
 | tcp dst port 8000 | Filter by destination TCP port = `8000` |
 | udp src portrange 1000-2000 | Filter by source TCP ports in `1000-2000` |
 | sctp port 22 | Filter by source or destination port = `22` |
+
+### Logical Operators
+
+| Operator | Syntax | Example | Description |
+| ------ | ------ | ------ | ------ |
+| AND | and, && | tcpdump -n src 192.168.1.1 and dst port 21 | Combine filtering options |
+| OR | or, \|\| | tcpdump dst 10.1.1.1 \|\| !icmp | Either of the condition can match |
+| EXCEPT | not, ! | tcpdump dst 10.1.1.1 and not icmp | Negation of the comdition |
+| LESS | < | tcpdump <32 | Shows packets size less than 32 |
+| GREATER | > | tcpdump >=32 | Shows packets size greater than 32 |
+
