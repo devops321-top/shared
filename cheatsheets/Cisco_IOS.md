@@ -144,3 +144,20 @@ Describes the basic commands for monitoring and logging Cisco network device.
 | `show logging` | Enable mode command that displays the state of system logging (syslog) and the contents of the standard system logging buffer. |
 | `terminal monitor` | An enable mode command that tells Cisco IOS to send a copy of all syslog messages, including debug messages, to the Telnet or SSH user who issues this command |
 
+### Initial Configuration (switches and routers)
+
+This section includes initial configuration Cisco switches and routers.
+
+| Command | Mode | What It Does |
+| ------ | ------ | ------ |
+| `hostname xyz` | G | Sets hostname to xyz |
+| `enable secret xyz` | G | Sets encrypted password for priv. EXEC to xyz |
+| `service password-encrypt` | G | Encrypts all passwords |
+| `line console 0` | G | Enters line config mode for console |
+| `line vty 0 15` | G | Enters line config mode for 16 vty lines |
+| `password xyz` | L | Sets line password to xyz |
+| `login` | L | Enables users to login |
+| `int vlan 1` | G | Enters interface config mode for vlan1 |
+| `ip address <ip> <subnet>` | I | Sets IP address |
+| `no shut` | I | Turns on interface |
+| `banner motd #Text Here# | G | Sets MOTD banner |
