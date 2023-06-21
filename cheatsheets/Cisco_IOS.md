@@ -80,7 +80,7 @@ Describes the basic commands for DHCP Cisco network device.
 | ip helper-address address	| An interface configuration mode command to enable forwarding of UDP broadcasts, including BOOTP, received on an interface |
 | default-router address[address2 ... address8]	| Used in DHCP pool configuration mode to specify the default router list for a DHCP client |
 
-### DHCP Commands
+### Security settings Commands
 
 Describes the basic commands for security settings Cisco network device.
 | Command | Purpose |
