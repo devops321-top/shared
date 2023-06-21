@@ -81,6 +81,21 @@ Describes the basic commands for routing and vlan Cisco network device.
 | `switchport trunk` {encapsulation { dot1q }	| Sets the trunk characteristics when the interface is in trunking mode. In this mode, the switch supports simultaneous tagged and untagged traffic on a port. |
 | `encapsulation dot1q vlan-id` | A configuration mode command that defines the matching criteria to map 802.1Q frames ingress on an interface to the appropriate service instance. |
 
+### IP Connectivity
+
+This section includes some of the most simple yet useful ip connectivity IOS commands. From displaying a routing table, creating static, to default route and dynamic routes with OSPF.
+
+| Command | Mode | Description |
+| ------ | ------ | ------ |
+| `show ip route` | P | Show the routing table |
+| `show ip route ospf` | P | Show routes created by the OSPF protocol |
+| `ip default-gateway <ip_address>` | G | Set the default gateway for the router |
+| `ip route <netowrk> <mask> <next hop>` | G | Create a new static route |
+| `no ip route <network> <mask> <next hop>` | G | Remove a specific static route |
+| `ip route 0.0.0.0 0.0.0.0 <next hop>` | G | Configure a default route |
+| `router ospf <process ID>` | G | Enable OSPF with an ID. The command will open the router configuration mode |
+| `show ip ospf interface` | P | Display all the active OSPF interfaces |
+
 ### DHCP Commands
 
 Describes the basic commands for DHCP Cisco network device.
