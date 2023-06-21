@@ -66,3 +66,17 @@ Describes the basic commands for routing and vlan Cisco network device.
 | switchport mode { access \| trunk } | Configures the VLAN membership mode of a port. The access port is set to access unconditionally and operates as a non-trunking, single VLAN interface that sends and receives non-encapsulated (non-tagged) frames. An access port can be assigned to only one VLAN. The trunk port sends and receives encapsulated (tagged) frames that identify the VLAN of origination. A trunk is a point-to-point link between two switches or between a switch and a router. |
 | switchport trunk {encapsulation { dot1q }	| Sets the trunk characteristics when the interface is in trunking mode. In this mode, the switch supports simultaneous tagged and untagged traffic on a port. |
 | encapsulation dot1q vlan-id | A configuration mode command that defines the matching criteria to map 802.1Q frames ingress on an interface to the appropriate service instance. |
+
+### DHCP Commands
+
+Describes the basic commands for DHCP Cisco network device.
+| Command | Purpose |
+| ------ | ------ |
+| ip address dhcp | A configuration mode command to acquire an IP address on an interface via DHCP |
+| ip dhcp pool name	| A configuration mode command to configure a DHCP address pool on a DHCP server and enter DHCP pool configuration mode |
+| domain-name domain | Used in DHCP pool configuration mode to specify the domain name for a DHCP client | 
+| network network-number [mask]	| Used in DHCP pool configuration mode to configure the network number and mask for a DHCP address pool primary or secondary subnet on a Cisco IOS DHCP server |
+| ip dhcp excluded-address ip-address [last-ip-address]	| A configuration mode command to specify IP addresses that a DHCP server should not assign to DHCP clients |
+| ip helper-address address	| An interface configuration mode command to enable forwarding of UDP broadcasts, including BOOTP, received on an interface |
+| default-router address[address2 ... address8]	| Used in DHCP pool configuration mode to specify the default router list for a DHCP client |
+
