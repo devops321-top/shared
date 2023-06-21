@@ -161,3 +161,17 @@ This section includes initial configuration Cisco switches and routers.
 | `ip address <ip> <subnet>` | I | Sets IP address |
 | `no shut` | I | Turns on interface |
 | `banner motd #Text Here# | G | Sets MOTD banner |
+
+### Router-specific configuration commands
+
+This section includes router-specific configuration Cisco routers.
+
+| Command | Mode | What It Does |
+| ------ | ------ | ------ |
+| `interface g0/1` | G | Enters interface config for Gigabit Ethernet 0/1 |
+| `ip address IP/prefix` | I | Sets interface's IPv4 address |
+| `no shut` | I | Turns on the interface |
+| `description <description text>` | I | Used to document info about the interface |
+| `ipv6 address IP/prefix` | I | Sets interface's IPv6 address |
+| `ipv6 address IP/prefix link-local` | I | Sets interface's IPv6 link-local address |
+| `ipv6 unicast-routing | G | Enables IPv6 routing |
