@@ -1,5 +1,19 @@
 # Cisco IOS Command
 
+### Cisco IOS Command Hierarchy
+
+There are currently eight modes in Cisco IOS command.
+| Prompt | Abbreviation | Description |
+| ------ | ------ | ------ |
+| `Router>` | U | User EXEC mode, is the first level of access. |
+| `Router#` | P | Privileged EXEC mode. The second level of access, accessible with the "enable" command. |
+| `Router(config)#` | G | Configuration mode. Accessible only via the privileged EXEC mode. |
+| `Router(config-if)#` | I | Interface mode. Level accessible via configuration mode. |
+| `Router(config-router)#` | R | Routing mode. Level within configuration mode. |
+| `Router(config-line)#` | L | Line level (vty, tty, async). Accessed via the configuration mode. |
+| `Router(config-vlan)#` | V | Config-vlan, accessible via the global configuration mode. |
+| `Switch(vlan)#` | VD | Vlan database, accessible from the privileged EXEC mode. |
+
 ### Basic Configuration Commands
 
 Describes the basic commands for configuring Cisco network devices.
