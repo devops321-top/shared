@@ -47,3 +47,19 @@ Set the name and email that will be attached to your commits and tags
 | `git branch -d <branch-name>` | Delete a merged branch |
 | `git branch -D <branch-name>` | Delete a branch, whether merged or not |
 | `git tab <tag-name>` | Add a tag to current commit (often used for new version releases) |
+
+### Merging
+
+| Name | Description |
+| ------ | ------ |
+| `git checkout b` & `git merge a` | Merge branch `A` into branch `B` |
+| `git merge --squash a` | Merge and squash all commits into one new commit |
+
+### Rebasing
+
+| Name | Description |
+| ------ | ------ |
+| `git checkout fet-1` & `git rebase main` | Rebase `fet-1` branch onto main (to incorporate new changes made to main). Prevents unnecessary merge commits into `fet-1`, keeping history clean |
+| `git rebase -i main` | Interactively clean up a branches commits before rebasing onto `main` |
+| `git rebase -i HEAD~3` | Interactively rebase the last 3 commits on current branch |
+
