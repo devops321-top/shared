@@ -121,3 +121,16 @@ Set the name and email that will be attached to your commits and tags
 | `git push <alias>` | Upload local content to remote repo |
 | `git push <alias> <branch>` | Upload to a branch (can then pull request) |
 
+### Ignoring patterns
+
+Preventing unintentional staging or committing of files
+
+```
+logs/
+*.notes
+pattern*/
+```
+Save a file with desired patterns as `.gitignote` with either direct string matches or wildcard globs.
+
+`git config --global core.excludesfile [file]`
+system wide ignore pattern for all local repositories
