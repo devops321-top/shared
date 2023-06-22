@@ -63,3 +63,15 @@ Set the name and email that will be attached to your commits and tags
 | `git rebase -i main` | Interactively clean up a branches commits before rebasing onto `main` |
 | `git rebase -i HEAD~3` | Interactively rebase the last 3 commits on current branch |
 
+### Undoing Things
+
+| Name | Description |
+| ------ | ------ |
+| `git mv <existing_path> <new_path>` | Move and/or rename a file and stage move |
+| `git rm <file>` | Remove a file from working directory and staging area, then stage the removal |
+| `git rm --cached <file>` | Remove from staging area only |
+| `git checkout <commit_hash>` | View a previous commit (READ ONLY) |
+| `git revert <commit_hash>` | Create a new commit, reverting the changes from a specified commit |
+| `git reset <commit_hash>` | Go back to a previous commit and delete all commits ahead of it (revert is safer) |
+| `git reset --hard  <commit_hash>` | Go back to a previous commit and delete all commits ahead of it also delete workspace changes (BE VERY CAREFULL) |
+
