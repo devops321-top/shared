@@ -75,3 +75,16 @@ Set the name and email that will be attached to your commits and tags
 | `git reset <commit_hash>` | Go back to a previous commit and delete all commits ahead of it (revert is safer) |
 | `git reset --hard  <commit_hash>` | Go back to a previous commit and delete all commits ahead of it also delete workspace changes (BE VERY CAREFULL) |
 
+### Review your Repository
+
+| Name | Description |
+| ------ | ------ |
+| `git status` | List new or modified files not yet committed |
+| `git log --oneline` | List commit history, with respective hash |
+| `git log --all` | List all commit history, with respective hash |
+| `git log --all --grapgh` | List all commit history, with respective hash in ASCII mode |
+| `git diff` | Show changes to unstaged files |
+| `git diff --cached` | Show changes to staged files |
+| `git diff commit1_hash commit2_hash` | Show changes between two commits |
+| `git show <hash>` | Show any object in Git in human-readable format |
+| `git log --follow <file-name>` | Show the commits that changed file, even across renames |
