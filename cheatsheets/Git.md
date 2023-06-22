@@ -88,3 +88,18 @@ Set the name and email that will be attached to your commits and tags
 | `git diff commit1_hash commit2_hash` | Show changes between two commits |
 | `git show <hash>` | Show any object in Git in human-readable format |
 | `git log --follow <file-name>` | Show the commits that changed file, even across renames |
+
+### Stashing
+
+| Name | Description |
+| ------ | ------ |
+| `git stash` | Store modified and staged changes |
+| `git stash -u` | Store modified, staged changes and untracked files |
+| `git stash -a` | Store modified, staged, untracked and ignored files |
+| `git stash save "comment"` | As abode, but add a comment |
+| `git stash -p` | Partial stash. Stash just a single file, a collection of file, or individual changes from within files |
+| `git stash list` | List all stashes |
+| `git stash apply` | Re-apply the stash without deleting it |
+| `git stash pop stash@{2}` | Re-apply the stash at index 2, then delete it from the stash list. Omit `stash@{n}` to pop the most recent stash |
+| `git stash show stash@{1}` | Show the diff summary of stash 1 |
+
