@@ -26,7 +26,7 @@ Set the name and email that will be attached to your commits and tags
 
 ### Basic Concepts
 
-| Name | Description |
+| Command | Description |
 | ------ | ------ |
 | `main:` | Default development branch |
 | `origin:` | Defailt upstream repository |
@@ -36,7 +36,7 @@ Set the name and email that will be attached to your commits and tags
 
 ### Branches
 
-| Name | Description |
+| Command | Description |
 | ------ | ------ |
 | `git branch` | List all local branches |
 | `git branch -r` | List all remote branches |
@@ -50,14 +50,14 @@ Set the name and email that will be attached to your commits and tags
 
 ### Merging
 
-| Name | Description |
+| Command | Description |
 | ------ | ------ |
 | `git checkout b` & `git merge a` | Merge branch `A` into branch `B` |
 | `git merge --squash a` | Merge and squash all commits into one new commit |
 
 ### Rebasing
 
-| Name | Description |
+| Command | Description |
 | ------ | ------ |
 | `git checkout fet-1` & `git rebase main` | Rebase `fet-1` branch onto main (to incorporate new changes made to main). Prevents unnecessary merge commits into `fet-1`, keeping history clean |
 | `git rebase -i main` | Interactively clean up a branches commits before rebasing onto `main` |
@@ -65,7 +65,7 @@ Set the name and email that will be attached to your commits and tags
 
 ### Undoing Things
 
-| Name | Description |
+| Command | Description |
 | ------ | ------ |
 | `git mv <existing_path> <new_path>` | Move and/or rename a file and stage move |
 | `git rm <file>` | Remove a file from working directory and staging area, then stage the removal |
@@ -77,7 +77,7 @@ Set the name and email that will be attached to your commits and tags
 
 ### Review your Repository
 
-| Name | Description |
+| Command | Description |
 | ------ | ------ |
 | `git status` | List new or modified files not yet committed |
 | `git log --oneline` | List commit history, with respective hash |
@@ -91,7 +91,7 @@ Set the name and email that will be attached to your commits and tags
 
 ### Stashing
 
-| Name | Description |
+| Command | Description |
 | ------ | ------ |
 | `git stash` | Store modified and staged changes |
 | `git stash -u` | Store modified, staged changes and untracked files |
@@ -107,7 +107,7 @@ Set the name and email that will be attached to your commits and tags
 
 ### Synchronizing 
 
-| Name | Description |
+| Command | Description |
 | ------ | ------ |
 | `git remote add <alias> <url>` | Add a remote repository |
 | `git remote` | View all remote connections |
