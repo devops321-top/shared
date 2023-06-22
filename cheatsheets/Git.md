@@ -102,4 +102,22 @@ Set the name and email that will be attached to your commits and tags
 | `git stash apply` | Re-apply the stash without deleting it |
 | `git stash pop stash@{2}` | Re-apply the stash at index 2, then delete it from the stash list. Omit `stash@{n}` to pop the most recent stash |
 | `git stash show stash@{1}` | Show the diff summary of stash 1 |
+| `git stash drop stash@{1}` | Delete stash at index 1. Omit `stash@{n}` to delete last stash made |
+| `git stash clear` | Delete all stashes |
+
+### Synchronizing 
+
+| Name | Description |
+| ------ | ------ |
+| `git remote add <alias> <url>` | Add a remote repository |
+| `git remote` | View all remote connections |
+| `git remote -v` | View all remote connections with URLs |
+| `git remote remove <alias>` | Remove a connection |
+| `git remote rename <old> <new>` | Rename a connection |
+| `git fetch <alias>` | Fetch all branches from remote repository (no merge) |
+| `git fetch <alias> <branch>` | Fetch a specific branch |
+| `git pull` | Fetch the remote repositories copy of the current branch, then merge |
+| `git pull --rebase <alias>` | Move (rebase) your local changes onto the top of new changes made to the remote repository (for clean, linear history) |
+| `git push <alias>` | Upload local content to remote repo |
+| `git push <alias> <branch>` | Upload to a branch (can then pull request) |
 
