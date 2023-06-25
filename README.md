@@ -9,7 +9,7 @@ Repository structure:
 
 1. [Lectures folder](https://github.com/devops321-top/shared/tree/736c44f085ba827e4dabb80a07c7e4cd6e9e8c8c/Lectures) - lectures in .pdf format on topics covered are stored here.
 
-2. [Cheatsheets folder](https://github.com/devops321-top/shared/tree/736c44f085ba827e4dabb80a07c7e4cd6e9e8c8c/cheatsheets) - cheatsheets for various tools are stored here: git, linux, docker, Wireshark and etc.
+2. [Cheatsheets folder](https://github.com/devops321-top/shared/tree/736c44f085ba827e4dabb80a07c7e4cd6e9e8c8c/cheatsheets) - cheatsheets for various tools are stored here: Git, Linux, Docker, Wireshark and etc.
 
 3. [File Questions.md](https://github.com/devops321-top/shared/blob/736c44f085ba827e4dabb80a07c7e4cd6e9e8c8c/Questions.md) - a file in which students of the group ask questions for further consideration in the lesson.
 
